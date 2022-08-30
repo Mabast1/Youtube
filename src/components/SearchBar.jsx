@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Paper, IconButton } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
+import Search from "@mui/icons-material/Search";
 
 const SearchBar = () => {
   return (
@@ -27,7 +27,7 @@ const SearchBar = () => {
         sx={{ p: "10px", color: "red" }}
         aria-label="Search"
       >
-        <SearchIcon />
+        <Search />
       </IconButton>
     </Paper>
   );
