@@ -19,7 +19,7 @@ const SearchBar = () => {
       <input
         className="search-bar"
         placeholder="Search..."
-        value={(e) => e.target.value}
+        value={""}
         onChange={() => {}}
       />
       <IconButton
