@@ -13,6 +13,11 @@ const options = {
   },
 };
 
+/**
+ * It takes a URL, adds it to the base URL, and then makes a GET request to that URL
+ * @param url - The URL of the API endpoint you want to call.
+ * @returns The data object from the axios response.
+ */
 export const fetchFromAPI = async (url) => {
   const { data } = await axios.get(`${BASE_URL}/${url}`, options);
 
