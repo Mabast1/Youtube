@@ -22,7 +22,31 @@ const ChannelDetail = () => {
     );
   }, [id]);
 
-  return <Box></Box>;
+  return (
+    <Box minHeight="95vh">
+      <Box>
+        <img
+          src={channelDetail?.brandingSettings?.image?.bannerExternalUrl}
+          alt="banner"
+          style={{
+            zIndex: 10,
+            width: "100%",
+            height: "300px",
+            objectFit: "cover",
+          }}
+        />
+        <ChannelCard
+          channelDetail={channelDetail}
+          marginTop="-130px"
+          style={{ PointerEvent: "none" }}
+        />
+      </Box>
+      <Box display="flex" p="2">
+        <Box sx={{ mr: { sm: "30px" } }} />
+        <Videos videos={videos} />
+      </Box>
+    </Box>
+  );
 };
 
 export default ChannelDetail;
