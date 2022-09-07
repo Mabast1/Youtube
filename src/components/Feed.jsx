@@ -52,7 +52,7 @@ const Feed = () => {
         >
           {selectedCategory} <span style={{ color: "#fc1503" }}>videos</span>
         </Typography>
-        <Videos videos={videos} />
+        <Videos videos={videos} direction="row" />
       </Box>
     </Stack>
   );
