@@ -25,7 +25,8 @@ const ChannelDetail = () => {
   return (
     <Box minHeight="95vh">
       <Box>
-        {channelDetail?.brandingSettings?.image?.bannerExternalUrl ? (
+        {/* {channelDetail?.brandingSettings?.image?.bannerExternalUrl ? ( */}
+        {false ? (
           <img
             src={channelDetail?.brandingSettings?.image?.bannerExternalUrl}
             alt="banner"
