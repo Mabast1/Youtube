@@ -9,8 +9,8 @@ import { fetchFromAPI } from "../utils/fetchFromAPI";
 
 const VideoDetail = () => {
   const { id } = useParams();
-  const [videoDetail, setVideoDetail] = useState(null);
-  const [videos, setVideos] = useState(null);
+  const [videoDetail, setVideoDetail] = useState([]);
+  const [videos, setVideos] = useState([]);
   // const {
   //   snippet: { title, channelId, channelTitle },
   //   statistics: { viewCount, likeCount },
